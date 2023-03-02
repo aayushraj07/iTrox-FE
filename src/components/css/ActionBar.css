@@ -1,0 +1,10 @@
+.bar {
+  border-style: solid;
+  margin-top: 4px;
+  height: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: beige;
+}

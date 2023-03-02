@@ -2,8 +2,9 @@ import "./css/Navbar.css";
 
 function Navbar() {
   return (
-    <div>
-      <input type="checkbox" id="ham-menu"></input>
+    <div className="body">
+      Navbar
+      {/* <input type="checkbox" id="ham-menu"></input>
       <input type="check" id="ham-menu"></input>
       <label for="ham-menu">
         <div class="hide-des">
@@ -25,7 +26,7 @@ function Navbar() {
           <li>Support</li>
           <li>Contact us</li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }

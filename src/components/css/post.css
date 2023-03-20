@@ -1,9 +1,30 @@
-.border {
+.post {
+  display: flex;
+  flex-direction: row;
   border-style: solid;
   height: 32rem;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   background-color: beige;
+  width: 500px;
+  margin: auto;
+  padding: auto;
+}
+
+.postImage {
+  background-color: aqua;
+  width: 200px;
+  height: 250px;
+  margin: auto;
+}
+
+.postDetails {
+  flex-direction: column;
+  background-color: violet;
+  width: 300px;
+  padding: 20px;
+}
+
+.detail {
+  margin: 12px;
+  width: 240px;
 }

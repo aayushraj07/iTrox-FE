@@ -7,13 +7,29 @@ import Footbar from "./components/Footbar";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
+    <div>
+      <div>
+        <Navbar />
+      </div>
       <div className="container">
         <div className="ad">
           <Post />
           <ActionBar />
         </div>
+        <div className="ad">
+          <Post />
+          <ActionBar />
+        </div>
+        <div className="ad">
+          <Post />
+          <ActionBar />
+        </div>
+        <div className="ad">
+          <Post />
+          <ActionBar />
+        </div>
+      </div>
+      <div>
         <Footbar />
       </div>
     </div>

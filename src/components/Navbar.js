@@ -1,32 +1,28 @@
 import "./css/Navbar.css";
+import dark from "./css/icons/dark.png";
+import account from "./css/icons/account.png";
 
 function Navbar() {
   return (
-    <div className="body">
-      Navbar
-      {/* <input type="checkbox" id="ham-menu"></input>
-      <input type="check" id="ham-menu"></input>
-      <label for="ham-menu">
-        <div class="hide-des">
-          <span class="menu-line"></span>
-          <span class="menu-line"></span>
-          <span class="menu-line"></span>
-          <span class="menu-line"></span>
-          <span class="menu-line"></span>
-          <span class="menu-line"></span>
-        </div>
-      </label>
-      <div class="full-page-green"></div>
-      <div class="ham-menu">
-        <ul class="centre-text bold-text">
-          <li>Home</li>
-          <li>Categories</li>
-          <li>Services</li>
-          <li>Shop</li>
-          <li>Support</li>
-          <li>Contact us</li>
+    <div className="navbar">
+      <div className="logo">Navbar</div>
+      <div className="hamburger">
+        <ul>
+          <li>
+            <img className="icons" src={dark} />
+          </li>
+          <li>
+            <button>
+              <a href="post.html"> Post</a>
+            </button>
+          </li>
+          <li>
+            <a href="profile.html" className="profile-btn">
+              <img className="icons" src={account}></img> Profile
+            </a>
+          </li>
         </ul>
-      </div> */}
+      </div>
     </div>
   );
 }

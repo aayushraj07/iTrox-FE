@@ -1,8 +1,8 @@
 .foot {
-  background-color: blanchedalmond;
-  height: 100px;
-  position: fixed;
-  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: #e98e8e;
+  position: relative;
   bottom: 0;
-  width: 100%;
 }

@@ -1,10 +1,26 @@
 .bar {
-  border-style: solid;
+  display: flex;
+  justify-content: space-between;
   margin-top: 4px;
-  height: 20px;
-  width: 50%;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  background-color: beige;
+}
+
+.action-icons {
+  width: 20px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.like {
+  width: 20px;
+}
+
+.share {
+  width: 20px;
+}
+
+.save {
+  width: 40px;
 }

@@ -1,8 +1,19 @@
+@media screen and (min-width: 512px) {
+  .foot {
+    background-color: #e98e8e;
+  }
+}
+
+@media (max-width: 512px) {
+  .foot {
+    background-color: #9a9494;
+  }
+}
+
 .foot {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
-  background-color: #e98e8e;
   position: relative;
   bottom: 0;
 }

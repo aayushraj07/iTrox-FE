@@ -9,16 +9,16 @@ function Navbar() {
       <div className="hamburger">
         <ul>
           <li>
-            <img className="icons" src={dark} />
+            <img src={dark} />
           </li>
           <li>
-            <button>
-              <a href="post.html"> Post</a>
+            <button class="post-button" role="button">
+              Post
             </button>
           </li>
           <li>
-            <a href="profile.html" className="profile-btn">
-              <img className="icons" src={account}></img> Profile
+            <a href="profile.html">
+              <img src={account}></img>
             </a>
           </li>
         </ul>

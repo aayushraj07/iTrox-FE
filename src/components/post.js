@@ -1,9 +1,12 @@
 import "./css/post.css";
+import shoeAd from "./css/icons/shoeAd.jpeg";
 
 function Post(props) {
   return (
     <div className="post">
-      <div className="postImage">hi</div>
+      <div className="postImage">
+        <img className="adImage" src={shoeAd}></img>
+      </div>
       <div className="postDetails">
         <div className="detail">Name</div>
         <div className="detail">Age</div>

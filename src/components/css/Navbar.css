@@ -19,7 +19,7 @@
 
 .logo {
   display: flex;
-  height: 100%;
+  padding-top: 10px;
 }
 
 .navbar img {

@@ -1,17 +1,17 @@
 import "./css/post.css";
 import shoeAd from "./css/icons/shoeAd.jpeg";
+import { useEffect } from "react";
 
-function Post(props) {
+function Post({ title, description, type }) {
   return (
     <div className="post">
       <div className="postImage">
         <img className="adImage" src={shoeAd}></img>
       </div>
       <div className="postDetails">
-        <div className="detail">Name</div>
-        <div className="detail">Age</div>
-        <div className="detail">Description</div>
-        <div className="detail">Type</div>
+        <div className="detail">Title : {title}</div>
+        <div className="detail">Description : {description}</div>
+        <div className="detail">Type : {type}</div>
       </div>
     </div>
   );

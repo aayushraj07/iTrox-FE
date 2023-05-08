@@ -1,3 +1,16 @@
+import { useState } from "react";
+import Post from "./Post";
+import ActionBar from "./ActionBar";
+
 function Advertisement(props) {
-  return <div className="ad"></div>;
+  const [adData, setAdData] = useState([]);
+
+  return (
+    <div className="ad">
+      <Post {...props} />
+      <ActionBar />
+    </div>
+  );
 }
+
+export default Advertisement;

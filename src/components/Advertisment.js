@@ -9,6 +9,8 @@ function Advertisement(props) {
     <div className="ad">
       <Post {...props} />
       <ActionBar />
+      <Post {...props} />
+      <ActionBar />
     </div>
   );
 }

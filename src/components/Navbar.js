@@ -1,15 +1,17 @@
 import "./css/Navbar.css";
 import dark from "./css/icons/dark.png";
 import account from "./css/icons/account.png";
+import ReactSwitch from "react-switch";
 
-function Navbar() {
+function Navbar({ toggleTheme, theme }) {
   return (
     <div className="navbar">
       <div className="logo">Navbar</div>
       <div className="hamburger">
         <ul>
-          <li>
-            <img src={dark} />
+          <li className="switch">
+            <label>{theme === "light" ? "Light Mode" : "Dark Mode"}</label>
+            <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
           </li>
           <li>
             <button class="post-button" role="button">

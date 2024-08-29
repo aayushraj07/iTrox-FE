@@ -1,6 +1,9 @@
 @media screen and (min-width: 512px) {
-  .navbar {
+  #light .navbar {
     background-color: #e98e8e;
+  }
+  #dark .navbar {
+    background-color: #6b815b;
   }
 }
 
@@ -43,8 +46,12 @@
   align-items: center;
 }
 
-.navbar li:hover {
-  background-color: white;
+#light .navbar li:hover {
+  background-color: #e98e8e;
+}
+
+#dark .navbar li:hover {
+  background-color: #6b815b;
 }
 
 /* CSS */
@@ -76,4 +83,24 @@
 .post-button:focus {
   border-color: #4285f4;
   outline: none;
+}
+
+.switch {
+  display: flex;
+  /* width: 100vw;
+  height: 100px; */
+  justify-content: center;
+  align-items: center;
+}
+
+.switch label {
+  margin: 10px;
+}
+
+#light .switch label {
+  color: white;
+}
+
+#dark .switch label {
+  color: black;
 }

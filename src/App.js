@@ -5,10 +5,16 @@ import Navbar from "./components/Navbar";
 import Post from "./components/Post";
 import Footbar from "./components/Footbar";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createContext } from "react";
 import Advertisement from "./components/Advertisment";
 
+export const ThemeContext = createContext(null);
+
 function App() {
+  const [theme, setTheme] = useState("dark");
+  const toggleTheme = () => {
+    setTheme((curr) => (curr == "light" ? "dark" : "light"));
+  };
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -21,21 +27,22 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <div>
-        <Navbar />
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <div className="App" id={theme}>
+        <div>
+          <Navbar toggleTheme={toggleTheme} theme={theme} />
+        </div>
+        <div className="filter"></div>
+        <div className="ad">
+          {data.map((item, index) => (
+            <Advertisement key={index} {...item} />
+          ))}
+        </div>
+        <div>
+          <Footbar />
+        </div>
       </div>
-      {/* <div className="container"> */}
-      <div className="ad">
-        {data.map((item, index) => (
-          <Advertisement key={index} {...item} />
-        ))}
-      </div>
-      {/* </div> */}
-      <div>
-        <Footbar />
-      </div>
-    </div>
+    </ThemeContext.Provider>
   );
 }
 

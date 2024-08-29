@@ -1,9 +1,16 @@
 .container {
   /* margin-top: 50px;
-  margin-bottom: 100px; */
-  /* height: 80rem; */
+  margin-bottom: 100px;
+  height: 80rem; */
 }
 
 .ad {
   padding: 10px;
+}
+
+#light {
+  background-color: #f3ebf3;
+}
+#dark {
+  background-color: #46045e;
 }

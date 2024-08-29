@@ -1,6 +1,9 @@
 @media screen and (min-width: 512px) {
-  .foot {
+  #light .foot {
     background-color: #e98e8e;
+  }
+  #dark .foot {
+    background-color: #6b815b;
   }
 }
 
